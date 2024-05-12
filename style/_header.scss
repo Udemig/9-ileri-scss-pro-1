@@ -1,0 +1,66 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  .nav-btn {
+    background: crimson;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover {
+      background: rgb(145, 16, 42);
+    }
+  }
+  @include mobile {
+    .nav-btn {
+      display: block;
+    }
+  }
+  @include mobile {
+    padding: 10px 20px;
+    img {
+      width: 70px !important;
+    }
+  }
+  img {
+    width: 100px;
+  }
+
+  nav {
+    display: flex;
+
+    align-items: center;
+    a {
+      padding: 0 20px;
+      text-decoration: none;
+      color: black;
+      white-space: nowrap;
+      cursor: pointer;
+      border-right: 1px solid;
+      transition: all 0.3s;
+      &:last-child {
+        border: none;
+      }
+      &:hover {
+        color: crimson;
+      }
+    }
+  }
+  @include mobile {
+    nav {
+      display: none;
+    }
+  }
+}

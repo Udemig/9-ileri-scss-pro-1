@@ -1,0 +1,31 @@
+#exterior {
+  margin-top: 40px;
+  height: 60vh;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), black),
+    url("./../images/exterior-4.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  color: white;
+  p {
+    text-align: center;
+    font-size: 22px;
+    max-width: 500px;
+  }
+  button {
+    background: transparent;
+    border: 1px solid white;
+    padding: 15px 60px;
+    color: white;
+    transition: all 0.3s;
+    &:hover {
+      background: white;
+      color: black;
+      cursor: pointer;
+    }
+  }
+}

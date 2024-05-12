@@ -1,0 +1,45 @@
+#timeline {
+  h2 {
+    @include mobile {
+      text-align: center;
+    }
+  }
+  padding: 50px;
+  @include mobile {
+    padding: 20px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
+    gap: 30px;
+    margin-top: 50px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+      img {
+        height: 200px;
+        object-fit: contain;
+      }
+      button {
+        width: 300px;
+        margin: auto;
+        border: none;
+        background: crimson;
+        padding: 10px;
+        color: white;
+        border-radius: 10px;
+        transition: all 0.3s;
+        &:hover {
+          cursor: pointer;
+          background: rgb(136, 4, 31);
+        }
+      }
+    }
+  }
+}

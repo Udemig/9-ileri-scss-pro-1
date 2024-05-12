@@ -1,0 +1,72 @@
+.hero {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(rgb(233, 233, 233) 50%, white 50%);
+  gap: 200px;
+  padding: 50px 100px;
+  @include laptop {
+    flex-direction: column;
+    padding: 25px 50px;
+    gap: 150px;
+  }
+  @include mobile {
+    padding: 10px 30px;
+    gap: 100px;
+  }
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 500px;
+    margin: auto;
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      @include mobile {
+        font-size: 35px;
+      }
+    }
+    p {
+      color: #7d7d7e;
+    }
+    img {
+      width: 200px;
+      mix-blend-mode: darken;
+      margin-top: 20px;
+    }
+    button {
+      background: crimson;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background: rgb(146, 13, 40);
+      }
+    }
+  }
+  .images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    &-banner {
+      max-width: 600px;
+      @include mobile {
+        width: 100%;
+      }
+      margin-top: 20px;
+    }
+    &-track {
+      max-width: 300px;
+      border-radius: 10px;
+      margin-top: 60px;
+      mix-blend-mode: difference;
+    }
+  }
+}

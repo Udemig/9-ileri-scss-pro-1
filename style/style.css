@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+header .nav-btn {
+  background: crimson;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px;
+  display: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+header .nav-btn:hover {
+  background: rgb(145, 16, 42);
+}
+@media (max-width: 700px) {
+  header .nav-btn {
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    padding: 10px 20px;
+  }
+  header img {
+    width: 70px !important;
+  }
+}
+header img {
+  width: 100px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+  cursor: pointer;
+  border-right: 1px solid;
+  transition: all 0.3s;
+}
+header nav a:last-child {
+  border: none;
+}
+header nav a:hover {
+  color: crimson;
+}
+@media (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+}
+
+.hero {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(rgb(233, 233, 233) 50%, white 50%);
+  gap: 200px;
+  padding: 50px 100px;
+}
+@media (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+    padding: 25px 50px;
+    gap: 150px;
+  }
+}
+@media (max-width: 700px) {
+  .hero {
+    padding: 10px 30px;
+    gap: 100px;
+  }
+}
+.hero .slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 500px;
+  margin: auto;
+}
+.hero .slogan h1 {
+  font-size: 40px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .hero .slogan h1 {
+    font-size: 35px;
+  }
+}
+.hero .slogan p {
+  color: #7d7d7e;
+}
+.hero .slogan img {
+  width: 200px;
+  mix-blend-mode: darken;
+  margin-top: 20px;
+}
+.hero .slogan button {
+  background: crimson;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.hero .slogan button:hover {
+  background: rgb(146, 13, 40);
+}
+.hero .images {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.hero .images-banner {
+  max-width: 600px;
+  margin-top: 20px;
+}
+@media (max-width: 700px) {
+  .hero .images-banner {
+    width: 100%;
+  }
+}
+.hero .images-track {
+  max-width: 300px;
+  border-radius: 10px;
+  margin-top: 60px;
+  mix-blend-mode: difference;
+}
+
+#interior {
+  margin-top: 40px;
+  height: 60vh;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), black), url("./../images/interior.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+#interior p {
+  text-align: center;
+  max-width: 500px;
+  font-size: 22px;
+}
+#interior button {
+  background: transparent;
+  border: 1px solid white;
+  padding: 15px 60px;
+  color: white;
+  transition: all 0.3s;
+}
+#interior button:hover {
+  background: white;
+  cursor: pointer;
+  color: black;
+}
+
+#timeline {
+  padding: 50px;
+}
+@media (max-width: 700px) {
+  #timeline h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  #timeline {
+    padding: 20px;
+  }
+}
+#timeline .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+@media (max-width: 700px) {
+  #timeline .cards {
+    grid-template-columns: 1fr;
+  }
+}
+#timeline .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+#timeline .cards .card img {
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#timeline .cards .card button {
+  width: 300px;
+  margin: auto;
+  border: none;
+  background: crimson;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+#timeline .cards .card button:hover {
+  cursor: pointer;
+  background: rgb(136, 4, 31);
+}
+
+#exterior {
+  margin-top: 40px;
+  height: 60vh;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), black), url("./../images/exterior-4.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  color: white;
+}
+#exterior p {
+  text-align: center;
+  font-size: 22px;
+  max-width: 500px;
+}
+#exterior button {
+  background: transparent;
+  border: 1px solid white;
+  padding: 15px 60px;
+  color: white;
+  transition: all 0.3s;
+}
+#exterior button:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "EB Garamond", serif;
+}/*# sourceMappingURL=style.css.map */
